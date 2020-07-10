@@ -19,7 +19,6 @@ apply plugin: 'io.spring.dependency-management'
 group 'com.sauce.book'
 version '1.0-SNAPSHOT'
 sourceCompatibility = 1.8
-
 repositories {
     mavenCentral()
     jcenter()
@@ -38,4 +37,5 @@ dependencies {
     testAnnotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.projectlombok:lombok'
     testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile('org.springframework.security:spring-security-test')
 }
